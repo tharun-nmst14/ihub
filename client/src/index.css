@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================
+   GLOBAL THEME
+===================== */
+
+:root {
+  --primary: #0ea5a4;
+  --secondary: #6366f1;
+  --accent: #eeaf41;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --info: #0284c7;
+
+  --bg1: #f0fdfa;
+  --bg2: #eef2ff;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: #111827;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* =====================
+   CONTAINERS & CARDS
+===================== */
+
+.card {
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+/* =====================
+   IMAGE EFFECTS
+===================== */
+.card-image {
+  height: auto;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #e5e7eb;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-image:hover img {
+  transform: scale(1.05);
+}
+
+
+/* =====================
+   BUTTON SYSTEM (PURE CSS – TAILWIND v4 SAFE)
+===================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  border: none;
+  text-decoration: none; /* 🔑 THIS FIXES <a> */
+  transition: all 0.25s ease;
+}
+
+/* Primary */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), #37cae1);
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(156, 218, 218, 0);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(14,165,164,0.45);
+}
+
+/* Secondary */
+.btn-secondary {
+  background: linear-gradient(135deg, var(--secondary), #818cf8);
+  color: white;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+/* Success */
+.btn-success {
+  background: linear-gradient(135deg, var(--success), #4ade80);
+  color: white;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+}
+
+/* Danger */
+.btn-danger {
+  background: linear-gradient(135deg, var(--danger), #f87171);
+  color: white;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+}
+/* Danger */
+.btn-accent {
+  background: linear-gradient(135deg, var(--danger), #e3a277);
+  color: white;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+}
+
+/* Warning */
+.btn-warning {
+  background: linear-gradient(135deg, var(--accent), #fde047);
+  color: #78350f;
+}
+
+.btn-warning:hover {
+  transform: translateY(-2px);
+}
+
+/* Info */
+.btn-info {
+  background: linear-gradient(135deg, var(--info), #38bdf8);
+  color: white;
+}
+
+.btn-info:hover {
+  transform: translateY(-2px);
+}
+
+/* Outline */
+.btn-outline {
+  background: white;
+  border: 2px solid #e5e7eb;
+  color: #374151;
+}
+
+.btn-outline:hover {
+  background: #f9fafb;
+}
+
+/* Disabled */
+.btn-disabled {
+  background: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* =====================
+   TEXT ACCENTS
+===================== */
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =====================
+   BADGES
+===================== */
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #fde68a, #f59e0b);
+  color: #78350f;
+}
+
+/* =====================
+   ANIMATIONS
+===================== */
+
+.fade-in {
+  animation: fadeIn .6s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input{
+  padding:1px;
+  margin-bottom: 1rem;
+  height: 20px;
+  
+}
