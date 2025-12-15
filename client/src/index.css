@@ -223,3 +223,13 @@ input{
   height: 20px;
   
 }
+
+
+footer {
+  background: linear-gradient(180deg, #6d6767ca, #f9fafb);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1%;
+}

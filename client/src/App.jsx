@@ -13,6 +13,7 @@ import EditItem from './pages/EditItem';
 import AdminSoldHistory from './pages/AdminSoldHistory';
 import MyChats from './pages/MyChats';
 import ChatPage from './pages/ChatPage';
+import Suggestions from './pages/Suggestions';
 
 function App(){
   const nav = useNavigate();
@@ -84,9 +85,15 @@ function App(){
           <Route path="/admin/sold-history" element={<AdminSoldHistory />} />
           <Route path="/chats" element={<MyChats />} />
           <Route path="/chat/:id" element={<ChatPage />} />
+          <Route path="/suggestions" element={<Suggestions />} />
 
         </Routes>
       </main>
+
+       {/* FOOTER */}
+        <footer className="mt-auto w-full py-6 text-center text-sm text-gray-500">
+          © 2025 I-Hub • Built by <span className="font-semibold">B20-Batch</span> • v1.0
+        </footer>
     </div>
   );
 }

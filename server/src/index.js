@@ -9,6 +9,7 @@ import itemsRouter from './routes/items.js';
 import adminRouter from './routes/admin.js';
 import conversationRoutes from './routes/Conversations.js';
 import uploadRoutes from './routes/upload.js';
+import suggestionRoutes from './routes/suggestions.js';
 
 const app = express();
 app.use(express.json());
@@ -28,6 +29,8 @@ app.use('/api/admin', adminRouter);
 
 app.use('/api/conversations', conversationRoutes);
 app.use('/api/upload', uploadRoutes);
+
+app.use('/api/suggestions', suggestionRoutes);
 
 const PORT = process.env.PORT || 5000;
 connectDB().then(()=> {
