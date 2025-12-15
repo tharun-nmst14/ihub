@@ -7,26 +7,7 @@ export default function Landing() {
   return (
     <div className="relative w-full min-h-screen">
 
-      {/* BACKGROUND IMAGE */}
-      <div
-        style={{
-          position: 'fixed',
-          inset: 0,
-          backgroundImage:
-            "url('https://res.cloudinary.com/dkfuo3dcx/image/upload/v1765690442/Ihub-bg_bj8siw.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          zIndex: -1
-        }}
-      >
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            backgroundColor: 'rgba(231, 245, 244, 0.94)'
-          }}
-        />
-      </div>
+     
 
       {/* CONTENT */}
       <div style={{ paddingTop: '120px' }} className="flex flex-col items-center">

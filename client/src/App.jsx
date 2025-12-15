@@ -30,7 +30,30 @@ function App(){
   }
 
   return (
+    
     <div>
+
+       {/* BACKGROUND IMAGE */}
+      <div
+        style={{
+          position: 'fixed',
+          inset: 0,
+          backgroundImage:
+            "url('https://res.cloudinary.com/dkfuo3dcx/image/upload/v1765690442/Ihub-bg_bj8siw.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          zIndex: -1
+        }}
+      >
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundColor: 'rgba(231, 245, 244, 0.94)'
+          }}
+        />
+      </div>
+      
       <header style={{padding:22, borderBottom:'3px solid #79a3f1ff',marginRight:30}}>
         <Link
   to="/"
