@@ -4,7 +4,7 @@ import API from '../api/api';
 
 export default function PostItem() {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem('ihub_user'));
+  // const user = JSON.parse(localStorage.getItem('ihub_user'));
 
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
@@ -25,10 +25,10 @@ export default function PostItem() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (!user?.isVerified) {
-      alert('Your account must be verified before posting items.');
-      return;
-    }
+    // if (!user?.isVerified) {
+    //   alert('Your account must be verified before posting items.');
+    //   return;
+    // }
 
     let imageUrl = null;
 

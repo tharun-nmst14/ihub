@@ -28,15 +28,15 @@ export default function AdminDashboard(){
       .catch(()=> {});
   }, [nav]);
 
-  async function verifyUser(id){
-    try{
-      await API.post(`/admin/users/${id}/verify`);
-      const r = await API.get('/admin/users');
-      setUsers(r.data);
-    }catch{
-      alert('Verify failed');
-    }
-  }
+  // async function verifyUser(id){
+  //   try{
+  //     await API.post(`/admin/users/${id}/verify`);
+  //     const r = await API.get('/admin/users');
+  //     setUsers(r.data);
+  //   }catch{
+  //     alert('Verify failed');
+  //   }
+  // }
 
   async function removeItem(id){
   try{
@@ -113,8 +113,8 @@ export default function AdminDashboard(){
 
                   {!u.isVerified && (
                     <button
-                      onClick={() => verifyUser(u._id)}
-                      className="btn-primary text-xs"
+                      // onClick={() => verifyUser(u._id)}
+                      // className="btn-primary text-xs"
                     >
                       Verify
                     </button>
