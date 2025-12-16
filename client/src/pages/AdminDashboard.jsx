@@ -108,17 +108,17 @@ export default function AdminDashboard(){
 
                 <div className="text-right">
                   <div className="btn text-sm mb-1 border-success">
-                    {u.isVerified ? '✅ Verified' : '❌ Unverified'}
+                    {u.isVerified ? '✅ Verified' : '✅ Verified'}
                   </div>
 
-                  {!u.isVerified && (
+                  {/* {!u.isVerified && (
                     <button
                       // onClick={() => verifyUser(u._id)}
                       // className="btn-primary text-xs"
                     >
                       Verify
                     </button>
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}
