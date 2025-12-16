@@ -12,13 +12,13 @@ router.get('/users', authMiddleware, adminOnly, async (req, res)=>{
 });
 
 // verify user
-router.post('/users/:id/verify', authMiddleware, adminOnly, async (req, res)=>{
-  const user = await User.findById(req.params.id);
-  if(!user) return res.status(404).json({ message: 'No user' });
-  user.isVerified = true;
-  await user.save();
-  res.json({ message: 'Verified' });
-});
+// router.post('/users/:id/verify', authMiddleware, adminOnly, async (req, res)=>{
+//   const user = await User.findById(req.params.id);
+//   if(!user) return res.status(404).json({ message: 'No user' });
+//   user.isVerified = true;
+//   await user.save();
+//   res.json({ message: 'Verified' });
+// });
 
 // admin list items
 router.get('/items', authMiddleware, adminOnly, async (req, res)=>{

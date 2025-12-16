@@ -31,9 +31,9 @@ router.post('/', authMiddleware, async (req, res) => {
   try {
     const user = req.user;
 
-    if (!user.isVerified) {
-      return res.status(403).json({ message: 'Verify account first' });
-    }
+    // if (!user.isVerified) {
+    //   return res.status(403).json({ message: 'Verify account first' });
+    // }
 
     const { title, description, category, price, condition, images } = req.body;
 

@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
   passwordHash: { type: String, required: true },
   department: { type: String },
   role: { type: String, enum: ['user','admin'], default: 'user' },
-  isVerified: { type: Boolean, default: false },
+  isVerified: { type: Boolean, default: true },
   createdAt: { type: Date, default: Date.now }
 });
 export default mongoose.model('User', userSchema);
