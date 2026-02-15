@@ -126,7 +126,7 @@ The platform includes secure authentication, role-based access control, private 
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/ihub.git
+git clone https://github.com/tharun-nmst14/ihub.git
 cd ihub
 ```
 ### Backend SetUp
